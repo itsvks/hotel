@@ -1,0 +1,119 @@
+@font-face {
+	font-family: 'open_sansregular';
+	src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
+			 url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
+			 url('../fonts/opensans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font-family: 'open_sansregular', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	padding-top: 70px;
+	background-color: #eee;
+}
+.pointer{
+	cursor: pointer;
+}
+.portfolio-item{
+	border:1px solid #eee;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+.portfolio-item:hover{
+	background-color: #D1EAFF;
+}
+.item-box{
+	padding: 5px;
+}
+.itemName{
+	color: rgb(0, 101, 184);
+	text-decoration: none;
+}
+.itemDesc, .itemRating{
+	color: #333;
+	text-decoration: none;
+}
+.notax{
+	vertical-align: top;
+	font-size: 10px;
+}
+
+/*Filter*/
+.filter{
+	border-bottom: 1px solid #bbb;
+	padding-bottom: 20px;
+}
+.filterName{
+	font-size: 21px;
+	margin-bottom: 15px;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+.filterOption{
+	height: 200px !important;
+	overflow-y:scroll;
+}
+.optionNames{
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid transparent;
+	-webkit-transition: all 100ms linear 0ms;
+	-moz-transition: all 100ms linear 0ms;
+	-ms-transition: all 100ms linear 0ms;
+	transition: all 100ms linear 0ms;
+}
+.optionNames:hover{
+	border-color: #ffd926;
+}
+.optionNames>.active{
+	display: inline-block;
+	width: 100%;
+	padding: 4px;
+	cursor: pointer;
+}
+.optionNames>.active:hover{
+	text-decoration: none;
+}
+.optionName{
+	margin-left: 5px;
+	vertical-align: text-bottom;
+}
+.sortPrice{
+	padding: 10px;
+	text-align: center;
+	color: #1F6CAD;
+}
+.sortPrice > span{
+	margin:0px 10px;
+}
+.sortPrice .selected{
+	color: #333;
+	text-shadow: 0 0 0 #000;
+}
+
+.loading_wrapper .loading{
+	width: 100%;
+	height: 114%;
+	z-index: 11;
+	position: fixed;
+	opacity: 1;
+	filter: alpha(opactiy=70);
+	-ms-filter: "alpha(opacity=70)";
+	-moz-opacity: .7;
+	-khtml-opacity: .7;
+	background: #fff;
+	top: 30px;
+}
+.loading_wrapper .content {
+	left: 48%;
+	position: absolute;
+	z-index: 12;
+	top: 50%;
+}
